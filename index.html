@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexible Box Model</title>
+	<style type="text/css">
+		.box-container{
+			display: -moz-box;
+			display: -webkit-box;
+			display: box;
+			width: 800px;
+			height: 100px;
+			margin: 0 auto;
+			padding: 20px;
+			background: #ccc;
+		}
+		.box{
+			border: 1px solid red;
+			padding: 0 1em;
+			/*font:bold 36px/200px monaco;*/
+
+		}
+
+		.first-box{
+			-webkit-box-flex:1;
+			box-flex:1;
+
+		}
+		.second-box{
+				-webkit-box-flex:2;
+			box-flex:2;
+		}
+		.three-box{
+				-webkit-box-flex:3;
+			box-flex:3;
+		}
+	</style>
+</head>
+<body>
+	<div class="box-container">
+		<div  class="box first-box"></div>
+		<div class="box second-box"></div>
+		<div class="box three-box"></div>
+	</div>
+</body>
+</html>
